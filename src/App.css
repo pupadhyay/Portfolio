@@ -1,38 +1,142 @@
-.App {
-  text-align: center;
+/**************************************/
+/* Header primary */
+/**************************************/
+
+.header_primary .navbar-nav .nav-link {
+  padding-right: 1rem !important;
+  padding-left: 1rem !important;
+  font-weight: 600;
+}
+/**************************************/
+/* Hero section */
+/**************************************/
+#hero_section,
+#about_section,
+#skills_section,
+#services_section,
+#portfolio_section,
+#blog_section,
+#contact_section {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.hero_section .name {
+  font-weight: 400;
+  font-size: 26px;
+  color: #0f172a;
+  margin-bottom: 22px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.hero_section .job {
+  font-weight: 700;
+  font-size: 70px;
+  color: #0f172a;
+  margin-bottom: 15px;
+  line-height: 1.2;
 }
+.hero_section .job span {
+  color: #f52225;
+}
+/**************************************/
+/* Section title */
+/**************************************/
+.section_title h6 {
+  display: inline-block;
+  position: relative;
+  color: #f52225;
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+.section_title h6::before {
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 1px;
+  background-color: #f52225;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 100%;
+  margin-left: 10px;
+}
+.section_title h2 {
+  font-size: 55px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 15px;
+}
+/**************************************/
+/* About me */
+/**************************************/
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.about_section .right {
+  padding-left: 50px;
+}
+.about_section .short {
+  border-bottom: 1px solid #cbd3d9;
+  padding-bottom: 20px;
+}
+.about_section .short h3 {
+  font-size: 32px;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 10px;
+}
+.about_section .short h5 {
+  font-size: 18px;
+  margin-bottom: 22px;
+}
+.about_section .short h5 .theme-color {
+  color: #f52225;
+}
+.about_section .extra {
+  padding-top: 23px;
+}
+.about_section .extra .title {
+  color: #0f172a;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.about_section .list {
+  margin-bottom: 20px;
+}
+.about_section .list ul {
+  list-style: none;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.about_section .left {
+  position: relative;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.about_section .left .image {
+  display: flex;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* background-image: url(images/3.jpg) no-repeat center center;
+  background-size: cover; */
+  border: 1px solid #ff0000;
+}
+*******************************/
+/* Section contact */
+/**************************************/
+.form_contact .form-control,
+.form_contact .btn {
+  border-radius: 0rem;
+}
+.contact_info p {
+  padding-top: 1.5rem;
+}
+.contact_info svg {
+  font-size: 1.75rem;
+}
+.form_contact p {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.form_contact p span {
+  font-weight: 700;
 }
