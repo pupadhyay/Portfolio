@@ -13,7 +13,7 @@ const HeroContent = () => {
           of those around me.
         </p>
       </div>
-      <div className="col-sm-4">Hero</div>
+      <div className="col-sm-4">right section</div>
     </div>
   );
 };
